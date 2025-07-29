@@ -136,8 +136,8 @@ def generate_data(seed=2024):
     # 读取数据
     
     # 读取数据
-    df_biased = pd.read_csv('/mlx_devbox/users/qianglin/playground/Datasets/normal_all_data.csv')
-    df_uniform = pd.read_csv('/mlx_devbox/users/qianglin/playground/Datasets/random_all_data.csv')
+    df_biased = pd.read_csv('/mlx_devbox/users/playground/Datasets/normal_all_data.csv')
+    df_uniform = pd.read_csv('/mlx_devbox/users/playground/Datasets/random_all_data.csv')
 
     np.random.seed(seed)
 
