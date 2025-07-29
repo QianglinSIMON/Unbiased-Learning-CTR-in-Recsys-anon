@@ -2,14 +2,14 @@ import numpy as np
 import pandas as pd
 
 
-dt_log_standard1 = pd.read_csv("/Users/bytedance/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data/log_standard_4_22_to_5_08_pure.csv")
+dt_log_standard1 = pd.read_csv("/Users/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data/log_standard_4_22_to_5_08_pure.csv")
 
-dt_log_standard2 = pd.read_csv("/Users/bytedance/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data/log_standard_4_08_to_4_21_pure.csv")
+dt_log_standard2 = pd.read_csv("/Users/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data/log_standard_4_08_to_4_21_pure.csv")
 
 
 dt_pure_log_standard=pd.concat([dt_log_standard1,dt_log_standard2],axis=0).reindex()
 
-dt_pure_log_rand = pd.read_csv("/Users/bytedance/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data/log_random_4_22_to_5_08_pure.csv")
+dt_pure_log_rand = pd.read_csv("/Users/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data/log_random_4_22_to_5_08_pure.csv")
 
 
 
@@ -25,7 +25,7 @@ dt_pure_log_rand=dt_pure_log_rand[['user_id', 'video_id', 'time_ms', 'is_click',
 
 
 
-dt_pure_user_feature = pd.read_csv("/Users/bytedance/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data"
+dt_pure_user_feature = pd.read_csv("/Users/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data"
                                 "/user_features_pure.csv")
 
 
@@ -40,7 +40,7 @@ dt_pure_user_feature=dt_pure_user_feature[['user_id', 'user_active_degree', 'is_
 
 
 
-dt_pure_video_basic_feature = pd.read_csv("/Users/bytedance/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data"
+dt_pure_video_basic_feature = pd.read_csv("/Users/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data"
                                 "/video_features_basic_pure.csv")
 
 
@@ -48,7 +48,7 @@ dt_pure_video_basic_feature=dt_pure_video_basic_feature[['video_id', 'author_id'
        'visible_status',  'server_width', 'server_height',
        'music_id']] ## 删除 'music_type', 'tag'，'video_duration' 三列，因为有些视频的这三个特征为空 
 
-dt_pure_video_summary_features = pd.read_csv("/Users/bytedance/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data/video_features_statistic_pure.csv")
+dt_pure_video_summary_features = pd.read_csv("/Users/Desktop/Unbiased_learning_CTR_codes/kuai_rand_Datasets_preprocess/KuaiRand-Pure/data/video_features_statistic_pure.csv")
 
 
 # 将用户特征数据连接到推荐系统数据集中
